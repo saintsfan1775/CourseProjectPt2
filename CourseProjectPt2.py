@@ -1,4 +1,9 @@
-## John Saraya CIS261 Wk5CourseProjectPart2 Using Lists and Dictionaries to Store and Retrieve Data
+## John Saraya CIS261 Wk5CourseProjectPt2 Using Lists and Dictionaries to Store and Retrieve Data
+
+## Create a new function that will input and return the from date and to date for the hours worked and is called inside the loop. This should be the first function called. Dates must be in the format mm/dd/yyyy.
+## Store the from date, to date , employee name, total hours, hourly rate and income tax rate in a list object. Note: multiple list objects may be needed to complete this functionality.
+## After the user terminates the loop, call a function that will: Read though the list(s) and for each employee calculate the income tax and net pay. Display the from date, to date, employee name, hours worked, hourly rate, gross pay, income tax rate, income taxes and net pay for the employee. Increment the total number of employees, total hours, total tax, total net pay and store the values in a dictionary object.
+## Modify the function that displays totals to read the data from the dictionary object and then display the totals.
 
 
 def get_name():
@@ -37,7 +42,7 @@ def print_info(EmpDetailList):
         hourly_rate = EmpList[4]
         tax_rate = EmpList[5]
         grosspay, tax, net_pay = calculate_tax_and_netpay(hours, hourly_rate, tax_rate)
-        print(fromdate, todate, name, f"{hours:,.2f}", f"{grosspay:,.2f}", f"{tax_rate:,.1%}", f"{tax:,.2f}", f"{net_pay:,.2f}")
+        print(fromdate, todate, name, f"{hours:,.2f}", f"{hourly_rate:,.2f}", f"{grosspay:,.2f}", f"{tax_rate:,.1%}", f"{tax:,.2f}", f"{net_pay:,.2f}")
         total_employees +=1
         total_hours += hours
         total_gross_pay += grosspay
